@@ -1,3 +1,5 @@
+# Project altered from https://github.com/Flangvik/NetLoader/
+
 # Stage a payload for the loader
 
 python3 aes_encryptor.py --key 's3cr3t' --in payload.exe --out payload.exe.aes
